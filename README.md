@@ -1,6 +1,8 @@
 # PyPracSources
 Py Prac Links and Sources
 
+VENV >> https://github.com/pyenv/pyenv
+
 # Python2 to 3 using Alias in Ubuntu 18.04 
 https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
 Vid Link >> https://www.youtube.com/watch?v=sghr1hG4UBI
