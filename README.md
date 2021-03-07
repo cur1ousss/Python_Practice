@@ -1,6 +1,8 @@
 # PyPracSources
 Py Prac Links and Sources
 
+VS CODE >> https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-is-slow-error-warning
+
 VENV >> https://github.com/pyenv/pyenv
 
 # Python2 to 3 using Alias in Ubuntu 18.04 
