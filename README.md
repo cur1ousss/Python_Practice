@@ -1,7 +1,7 @@
 # PyPracSources
 Py Prac Links and Sources
 
-VS CODE >> https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-is-slow-error-warning
+VS CODE shell warning >> https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-is-slow-error-warning
 
 VENV >> https://github.com/pyenv/pyenv
 
