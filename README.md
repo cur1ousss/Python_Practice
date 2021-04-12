@@ -1,6 +1,8 @@
 # PyPracSources
 Py Prac Links and Sources
 
+https://github.com/fiqri19102002
+
 VS CODE shell warning >> https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-is-slow-error-warning
 
 VENV >> https://github.com/pyenv/pyenv
