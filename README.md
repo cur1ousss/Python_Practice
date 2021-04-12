@@ -1,6 +1,8 @@
 # PyPracSources
 Py Prac Links and Sources
 
+https://www.msn.com/en-in/entertainment/other/abhishek-bachchan-was-close-to-quitting-bollywood-but-these-words-from-amitabh-bachchan-made-him-stop/ar-BB1fzgdg?ocid=msedgntp
+
 https://github.com/fiqri19102002
 
 VS CODE shell warning >> https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-is-slow-error-warning
