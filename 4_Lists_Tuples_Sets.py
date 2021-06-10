@@ -22,7 +22,9 @@ print(list_Courses[1:]) # listName[2:] by default assumes upto last if nothing g
 
 # &&& Slicing Video Continue here later >> https://www.youtube.com/watch?v=ajrtAuDg3yw
 
-# Modifying List
+# *****************************************************************************
+
+			# Modifying List
 
 list_Courses.append("Economics") # appends at last of list
 # list_Courses.append("Psychology","Astronomy") # ERROR   >> List.append() takes only 1 argument

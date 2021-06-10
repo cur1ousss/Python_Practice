@@ -63,3 +63,26 @@ print(round(3.05))      # 3
 
 
 # For the built-in types supporting round(), values are rounded to the closest multiple of 10 to the power minus ndigits; if two multiples are equally close, rounding is done toward the ** EVEN CHOICE ** (so, for example, both round(0.5) and round(-0.5) are 0, and round(1.5) is 2). Any integer value is valid for ndigits (positive, zero, or negative). The return value is an integer if ndigits is omitted or None. Otherwise the return value has the same type as number.
+
+# *****************************************************************************
+
+
+
+
+
+numx='100'
+numy='200'
+
+print(num1+num2) # gives 100200 since strings with "+" operator are concatenated
+
+
+# Casting Integer like String to Integer
+    # variableX=int(variableX)
+    # variableX=int(varibleY)
+    # variableX=int(StringLikeNumber)
+num1='100'
+num2='200'
+
+num1=int(num1)
+num2=int(num2)
+print(num1+num2)
