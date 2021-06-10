@@ -1,4 +1,4 @@
-# PyPracSources
+# PyPrac_Sources
 Py Prac Links and Sources
 
 https://www.msn.com/en-in/entertainment/other/abhishek-bachchan-was-close-to-quitting-bollywood-but-these-words-from-amitabh-bachchan-made-him-stop/ar-BB1fzgdg?ocid=msedgntp
