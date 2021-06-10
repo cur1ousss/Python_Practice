@@ -73,7 +73,7 @@ print(round(3.05))      # 3
 numx='100'
 numy='200'
 
-print(num1+num2) # gives 100200 since strings with "+" operator are concatenated
+print(numx+numy) # gives 100200 since strings with "+" operator are concatenated
 
 
 # Casting Integer like String to Integer
