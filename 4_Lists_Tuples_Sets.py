@@ -42,6 +42,49 @@ list_Courses2=["Pyschology","Economics"]
 list_Courses.insert(0,list_Courses2) # can insert list within list But Outputs as Sublist >> [['Pyschology', 'Economics'], 'Computer Science', 'Maths', 'Physics', 'Biology', 'Chemisty']
 print(list_Courses)
 
+# list.extend("Another List or Element")		different from .append() | .extend() adds to list as whole whereas append adds as sublist
+list_Courses.extend(list_Courses2)
 
+print(f"Using .extend() {list_Courses}")
 
+# list.remove("Element") >> removes given Element from list
+list_Courses.remove("Economics")
+
+# return_String list.pop()  >> Takes no Argument by default removes the last element, When want to use List as Stack or Queue
+	# list.pop() returns the Element Popped
+list_Courses.pop()
+popped_Element=list_Courses2.pop()
+
+# *****************************************************************************
+
+# list.reverse() >> reverses List Order | Takes no Parameters{Arguments}
+list_Courses.reverse()
+
+# list.sort() >> by Default Sorts in Ascending Order Alphabetically and Numerically
+# list.sort(reverse=True) >> Sorts in Descending| Reverse Order
+# .sort() Method modifies Original List to Retain Original List use sorted() Function
+list_Courses2.sort()
+
+# return_Element sorted(list) >> doesnt modify original List only sorts Temporarily
+Sorted_Courses=sorted(list_Courses)
+print(Sorted_Courses)
+
+# *****************************************************************************
+
+Num_List=[1,2,3,4,5]
+
+print(min(Num_List)) # min(list) >> prints Minimum of List
+print(max(Num_List)) # max(list) >> prints Maximum of List
+print(sum(Num_List)) # sum(List) >> prints Sum of Elements of List
+	# max() min() work on String Lists as well Alphabetically
+	# sum() doesnt work on String Lists Error
+
+# *****************************************************************************
+
+# Finding Index of Element in List
+list_Courses.index("Art") # prints index of Art in List INdexing >> 0 , 1 ,2
+		# if Element doesnt exists gives ValueError
+
+	# Checking if Element is in list or not
+print("Art" in list_Courses) # prints True | False
 
