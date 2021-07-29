@@ -82,9 +82,30 @@ print(sum(Num_List)) # sum(List) >> prints Sum of Elements of List
 # *****************************************************************************
 
 # Finding Index of Element in List
-list_Courses.index("Art") # prints index of Art in List INdexing >> 0 , 1 ,2
-		# if Element doesnt exists gives ValueError
+print(list_Courses.index("Art")) # prints index of Art in List INdexing >> 0 , 1 ,2
+	# if Element doesnt exists gives ValueError()
 
 	# Checking if Element is in list or not
 print("Art" in list_Courses) # prints True | False
 
+# *****************************************************************************
+
+# Looping in through List
+
+list_Courses=["Computer Science","Maths","Physics","Biology","Chemisty"]
+
+for varName in list_Courses:
+	print(varName)  # By default print statement goes to new line so Output one below Another list_Courses
+
+print("\n")
+
+# Enumerate items in For Loop use enumerate and index
+
+for index,VarName in enumerate(list_Courses):		
+	print(index,VarName)		# By default index Starts 0
+
+print("\n")
+
+for index,item in enumerate(list_Courses,start=6):
+	print(index,item)		# Starting element indexing goes 6,7,8,9,10 all indexed not Skipped
+	
