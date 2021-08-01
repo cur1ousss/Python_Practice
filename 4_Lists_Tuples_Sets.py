@@ -133,3 +133,66 @@ print(str_list)
 new_List=str_list.split("-")
 
 print(new_List)
+
+# ***************************************************************************** 
+
+# Tuples
+	# We cant modify tuples Tuples are immutable
+	# Lists are mutable Tuples are immutable
+
+	# Mutable
+
+list_Courses=["Computer Science","Maths","Physics","Biology","Chemisty"]
+
+list_2=list_Courses
+
+list_Courses[0]="Hindi"
+
+print(list_Courses)
+print(list_2)		# Lists >> list 1 and list 2 are the SAME Mutable Object pointing to Same location hence even tho declared in start updates are carry forwarded
+
+# Immutable
+
+tuple_1=("Computer Science","Maths","Physics","Biology","Chemisty")
+tuple_2=tuple_1
+
+tuple_1(0)="Marathi" # Error >> Tuples are immutable hence cant modify 
+
+# ***************************************************************************** 
+
+# SETS
+	# Unordered and No Duplicates Allowed
+Set_1={"Computer Science","Maths","Physics","Biology","Chemisty"}
+
+print(Set_1)  # Since Sets are unordered Each Time Different Random Output Print of Elements
+
+set_2={"Math","Hindi","Math"}
+print(set_2) # Ouput contains only Unique Values
+
+# to find MemberShip of element	# can also in lists ,Tuples But Sets more efficient
+print("Math" in set_2)	# Output True | False
+
+
+set_1={"Hindi","English","Biology"}
+set_2={"Marathi","English","Math"}
+
+# To find common elements in both sets
+print(set_1.intersection(set_2))
+
+# To find elements in 1 set not in Another
+print(set_1.difference(set_2))
+
+# To find all Elements in both sets
+print(set_1.union(set_2))
+
+# Empty Lists
+emptyList=[]
+emptyList=list()
+
+# Empty Tuple
+emptyTuple=()
+emptyList=tuple()
+
+# Empty Set
+emptySet={} # This isnt set ! Its Dictionary
+emptySet=set() # Correct Way
