@@ -108,4 +108,28 @@ print("\n")
 
 for index,item in enumerate(list_Courses,start=6):
 	print(index,item)		# Starting element indexing goes 6,7,8,9,10 all indexed not Skipped
-	
+
+# ***************************************************************************** 
+
+# List to String and String to List
+
+list_Courses=["Computer Science","Maths","Physics","Biology","Chemisty"]
+
+str_List="- ".join(list_Courses)
+
+print(str_List)
+
+new_List=str_List.split(" - ")
+
+print(new_List)
+
+
+# Experiment >> Includes Spaces as well in matching Pattern
+str_list=" - ".join(list_Courses) # OP >> Computer Science - Maths - Physics - Biology - Chemisty
+	# "left_Half_PrevTerm (Separator like - , ) Right_Half_NextTerm"
+
+print(str_list)
+
+new_List=str_list.split("-")
+
+print(new_List)
