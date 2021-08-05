@@ -156,7 +156,7 @@ print(list_2)		# Lists >> list 1 and list 2 are the SAME Mutable Object pointing
 tuple_1=("Computer Science","Maths","Physics","Biology","Chemisty")
 tuple_2=tuple_1
 
-tuple_1(0)="Marathi" # Error >> Tuples are immutable hence cant modify 
+tuple_1(0)="Marathi" # ERROR >> Tuples are immutable hence cant modify 
 
 # ***************************************************************************** 
 
