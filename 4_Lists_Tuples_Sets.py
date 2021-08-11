@@ -156,7 +156,7 @@ print(list_2)		# Lists >> list 1 and list 2 are the SAME Mutable Object pointing
 tuple_1=("Computer Science","Maths","Physics","Biology","Chemisty")
 tuple_2=tuple_1
 
-tuple_1(0)="Marathi" # ERROR >> Tuples are immutable hence cant modify 
+#tuple_1(0)="Marathi" # ERROR >> Tuples are immutable hence cant modify 
 
 # ***************************************************************************** 
 
@@ -196,3 +196,13 @@ emptyList=tuple()
 # Empty Set
 emptySet={} # This isnt set ! Its Dictionary
 emptySet=set() # Correct Way
+
+# Tuple and List retains all members while printing whereas Set only Prints Unique Elements
+tupleo=("math","math","Science")
+print(tupleo)
+
+seto={"math","math","Science"}
+print(seto)
+
+listp=["math","math","science"]
+print(listp)
