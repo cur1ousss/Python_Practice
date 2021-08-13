@@ -14,13 +14,13 @@ if language=="Python":
 
 
 # Boolean Operators
-# ==
-# !=
-# >
-# <
-# >=
-# <=
-# is {Object Identity}	>> checks if same object in Memory | if they have same id different from ==
+	# ==
+	# !=
+	# >
+	# <
+	# >=
+	# <=
+	# is {Object Identity}	>> checks if same object in Memory | if they have same id different from ==
 
 tmp="string"
 
@@ -83,6 +83,9 @@ b=[1,2,3]
 print(a==b)
 print(a is b)  # is Matches Memory Location so here A is NOT B , OP >> false
 
+# is operator and ==  Comparision
+	#  a is b   >> id(a) == id(b)
+
 # Location of Object in Memory using id()
 print(id(a))
 print(id(b))
@@ -90,4 +93,18 @@ print(id(b))
 c=[1,2]
 d=c
 print(c is d)
-print(c==d)
+print(c==d)   # OP >> True
+
+# False Values for "condition" :			Output
+	# False						False
+	# None						False
+	# Zero of any numeric type			0 >> False || Any other Number >> True
+	# Any empty sequence '',(),[]			False || '' is
+	# Any empty mapping {}				False
+		# use above for mapping and sequences to Find if they are Empty
+condition=False
+condition=[]
+if(condition):
+	print("condition Evaluated to True")
+else :
+	print("condition Evaluated to False")
