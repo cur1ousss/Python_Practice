@@ -4,7 +4,8 @@
 list_Courses=["Computer Science","Maths","Physics","Biology","Chemisty"]
 
 print(list_Courses) # Output in form of square same list >> ["Computer Science","Maths","Physics","Biology","Chemisty"]
-print(len(list_Courses)) # len(ListName) prints len of list
+print(f"length is {len(list_Courses)}") # len(ListName) prints len of list
+ 	# print(len(list_Courses))
 
 print(list_Courses[0]) # indexing start 0 -> n-1
 # Output Simple string >> Computer Science
