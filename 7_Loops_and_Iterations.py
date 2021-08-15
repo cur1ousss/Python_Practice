@@ -82,3 +82,8 @@ while True:
 		break
 	print(f"Running {x}")
 	x+=1
+
+x=2
+# 2 ki table bhanchod
+for i in range(1,11):
+	print(f"{x}*{i}={x*i}")
