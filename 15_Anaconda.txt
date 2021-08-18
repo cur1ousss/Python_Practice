@@ -1,0 +1,9 @@
+Anaconda
+	data science platform IDE 
+
+Conda 
+	package manager and Environment manager of Anaconda
+
+MiniConda
+	Minimal Anaconda installation contains less packages if less space on hdd
+

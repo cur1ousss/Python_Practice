@@ -1,0 +1,33 @@
+# Virtual Environments
+	to separate package versions between different projects
+
+- pip install virtualenv
+
+- mkdir Environments
+- cd !$
+- virtualenv Project1_env
+	# installs basic setuptools and pip tools
+
+# to activate new created python Environment
+- source Project1_env/bin/activate
+
+# to make sure in correct Environment
+- which python
+	# outputs points to python in created Environment
+	 - conda deactivate # deactivate base package
+	 - which python # output points to global python
+
+- deactivate
+	# to get out of local created Environment
+
+# delete Environment and project
+- rm -rf Project1_env
+
+# new Environment and Project with Specific Python version
+- virtualenv -p /usr/bin/python2.6 Project1_env
+	# to confirm version 
+	 - python --version
+
+# DON'T PUT PROJECT FILES INSIDE Environment Folder Created 
+	why?
+	
