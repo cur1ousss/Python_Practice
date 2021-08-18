@@ -1,0 +1,35 @@
+# pip commands
+	# pip >> python Package Manager
+
+- pip help
+
+# search install uninstall
+- pip search PackageName
+- pip install PackageName
+- pip uninstall PackageName
+
+# list all packages installed
+- pip list
+
+#list outdated packages
+- pip list --outdated
+- pip list -o 
+- pip install -U PackageName 
+	# To upgrade outdated package
+
+# to share PackageName and Version with Other user
+- pip freeze
+- pip freeze > requirements.txt
+- cat requirements.txt
+	# share this requirements file on other PC to install packages
+
+# to install shared requirements.txt installs the exact Version mentioned in the requirements.txt 
+- pip install -r requirements.txt
+
+# to upgrade Multiple outdated packages
+- pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
+	# | >> pipe to another
+	# --local >> if running command in virtual machine grabs only the local packages does'nt affect Global packages outside
+	# grep \-e >> to avoid -e package definitions
+	# cut -d = -f 1 >> -d delimiter is = and terms f = 1
+	# xargs -n1 >> accepts arguments one by one
