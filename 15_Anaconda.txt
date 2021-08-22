@@ -1,9 +1,30 @@
 Anaconda
 	data science platform IDE 
 
-Conda 
-	package manager and Environment manager of Anaconda
-
 MiniConda
 	Minimal Anaconda installation contains less packages if less space on hdd
 
+Conda 
+	package manager and Environment manager of Anaconda
+	can install non python packages and dependencies
+	# Conda Commands
+		- conda --help
+		- conda list
+			# conda has similar commands like pip
+	
+	# Conda for creating new virtual Environment
+		- conda create --name my_expApp flask sqlalchemy
+					// need to pass atleast 1 package
+
+		- source activate my_expApp
+				// to switch to created Environment
+		- source deactivate
+
+		- conda create --name Py27Exp_App python=2.7 flask sqlalchemy
+			- source activate Py27Exp_App
+		
+	- conda env list
+		 // to list all Environments installed
+
+	- conda remove --name my27App_Python --all
+			 	// --all flag for all packages installed alongwith Env
