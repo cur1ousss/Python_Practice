@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/cyberpunk/A_HOME/ADevNLearning/Python_Practice/Currently_Working/Github_Repo_Normal_Env/Py_Prac/16_MultipleEnv/16_my_project_env/bin/python "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy.f2py.f2py2e import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

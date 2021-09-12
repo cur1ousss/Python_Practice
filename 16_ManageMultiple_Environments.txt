@@ -1,0 +1,75 @@
+pip is a package manager for Python. 
+venv is an environment manager for Python. 
+conda is both a package and environment manager and is language agnostic.
+
+
+# Conda and venv differnce
+	https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533#
+
+
+
+
+mkdir 16_MyProject
+cd 16_MyProject
+
+conda create --name 16_MyProject_Env flask python=2.7
+source activate 16_MyProject_Env
+	or
+conda create --prefix /Path/home/user/folder/16_MyProject_Env python=2.7 flask numpy
+source activate 16_MyProject_Env
+
+conda env export > environment.yaml
+conda env create -f environment.yaml
+	// create env using yaml file similar to requirements.txt
+
+
+# Managing Environment Variables
+				// can use global variables but Environment variables better since global might still conflict
+-used to set Database URLs
+-hold secret keys
+-set python Path
+
+	Environment Variables allow us to access sensitive data without putting it into Project Code
+
+// list conda environments on machine
+	- conda env list
+
+// cd to env directory
+ // create 2 differnt directory trees so we can set environment variables
+	// activate directory >> holds Scirpts that will run whenever the environment is activated
+		- mkdir -p etc/conda/activate.d
+		- touch etc/conda/activate.d/env_vars.sh
+
+		- mkdir -p etc/conda/deactivate.d 
+		- touch etc/conda/deactivate.d/env_vars.sh
+
+		Now create Environment variables in activate script and unset them in deactivate script
+
+	#!/bin/sh >> indicates file is a bash script
+
+	# File activate.d/env_vars.sh	{contents exact and symbols}
+
+		#!/bin/sh 
+		export DATABASE_URI="postgresql://user:pass@db_server:5431/testName_db"
+
+	*// Environment variable >> for a connection to a Database with username and password so it is separate from Project's Code and not uploaded to public git etc..
+
+	# File deactivate.d/env_vars.sh {contents exact and symbols}
+
+		#!/bin/sh
+		unset DATABASE_URI
+
+
+// to check if Environment variable scripts loading 
+	- source activate 16_MyProject_Env
+	- echo $DATABASE_URI
+
+	- source deactivate
+
+
+// learned to separate Environments, python versions, dependencies{modules},Environment variables
+	// activating that project env will lead to DB activate to its correct project so databases not mixed for other projects
+
+
+// 14:20 >> https://www.youtube.com/watch?v=cY2NXB_Tqq0&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=37
+	>> script to auto activate correct Environment

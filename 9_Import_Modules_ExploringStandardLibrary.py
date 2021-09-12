@@ -62,7 +62,7 @@ import Experiment_Module_Folder.Experiment_Module_inFolder
 import sys
 sys.path.append("Path_to_Module")
 	# not best approach since Temporary also if we need module multiple times need to hardcode and reapeat it multiple times
-		# Edit Environment Variable
+		 # so Edit Environment Variable
 
 # Sys.path secondly looks into Python Path Environment Variable
 		# $PATH export for Linux
@@ -110,7 +110,7 @@ print(os.getcwd())  # current working directory
 print(os.__file__)
 
 import antigravity  # antigravity joke module opens Webcomic for Python Joke meme
-
+ 
 
 # FINISHED BASICS >>> 9 Videos https://www.youtube.com/watch?v=xFciV6Ew5r4&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=9
 	# After this watch videos according to Interest and Need unordered

@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/cyberpunk/A_HOME/ADevNLearning/Python_Practice/Currently_Working/Github_Repo_Normal_Env/Py_Prac/16_MultipleEnv/16_my_project_env
+exec_prefix=/home/cyberpunk/A_HOME/ADevNLearning/Python_Practice/Currently_Working/Github_Repo_Normal_Env/Py_Prac/16_MultipleEnv/16_my_project_env
+libdir=/home/cyberpunk/A_HOME/ADevNLearning/Python_Practice/Currently_Working/Github_Repo_Normal_Env/Py_Prac/16_MultipleEnv/16_my_project_env/lib
+includedir=/home/cyberpunk/A_HOME/ADevNLearning/Python_Practice/Currently_Working/Github_Repo_Normal_Env/Py_Prac/16_MultipleEnv/16_my_project_env/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lrt  -lpthread

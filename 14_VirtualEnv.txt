@@ -1,6 +1,13 @@
 # Virtual Environments
 	to separate package versions between different projects
 
+pip is a package manager for Python. 
+venv is an environment manager for Python. 
+conda is both a package and environment manager and is language agnostic.
+
+# Conda vs venv vs pip
+	https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533#
+
 - pip install virtualenv
 
 - mkdir Environments

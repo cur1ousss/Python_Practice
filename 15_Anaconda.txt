@@ -1,8 +1,17 @@
-Anaconda
+# Anaconda
 	data science platform IDE 
 
-MiniConda
+# MiniConda
 	Minimal Anaconda installation contains less packages if less space on hdd
+
+# Conda Commands
+	https://conda.io/projects/conda/en/latest/commands.html#conda-vs-pip-vs-virtualenv-commands
+
+pip is a package manager for Python. 
+venv is an environment manager for Python. 
+conda is both a package and environment manager and is language agnostic.
+
+https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533#
 
 Conda 
 	package manager and Environment manager of Anaconda
@@ -22,6 +31,8 @@ Conda
 
 		- conda create --name Py27Exp_App python=2.7 flask sqlalchemy
 			- source activate Py27Exp_App
+		- conda create -n Py27Exp_App python=2.7 flask sqlalchemy
+				// -n flag === --name flag
 		
 	- conda env list
 		 // to list all Environments installed

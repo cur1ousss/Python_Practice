@@ -1,0 +1,101 @@
+{
+  "build": "h06a4308_3350",
+  "build_number": 3350,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [
+    "__glibc >=2.17"
+  ],
+  "depends": [],
+  "extracted_package_dir": "/home/cyberpunk/anaconda3/pkgs/intel-openmp-2021.3.0-h06a4308_3350",
+  "features": "",
+  "files": [
+    "lib/libiomp5.so",
+    "lib/libiomp5_db.so",
+    "lib/libiompstubs5.so",
+    "lib/libomptarget.rtl.level0.so",
+    "lib/libomptarget.rtl.opencl.so",
+    "lib/libomptarget.rtl.x86_64.so",
+    "lib/libomptarget.so",
+    "licensing/compiler/openmp/third-party-programs.txt"
+  ],
+  "fn": "intel-openmp-2021.3.0-h06a4308_3350.conda",
+  "legacy_bz2_md5": "75225ab3ec3898e0a2661d5f4a71c1a7",
+  "license": "LicenseRef-ProprietaryIntel",
+  "license_family": "Proprietary",
+  "link": {
+    "source": "/home/cyberpunk/anaconda3/pkgs/intel-openmp-2021.3.0-h06a4308_3350",
+    "type": 1
+  },
+  "md5": "f4abddc8a0203dd80c3a7d27add9a14f",
+  "name": "intel-openmp",
+  "package_tarball_full_path": "/home/cyberpunk/anaconda3/pkgs/intel-openmp-2021.3.0-h06a4308_3350.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libiomp5.so",
+        "path_type": "hardlink",
+        "sha256": "5722e2b6f578b8b78af8c20680f27e5688f98eee6346c122c085db9a8ea20089",
+        "sha256_in_prefix": "5722e2b6f578b8b78af8c20680f27e5688f98eee6346c122c085db9a8ea20089",
+        "size_in_bytes": 2422916
+      },
+      {
+        "_path": "lib/libiomp5_db.so",
+        "path_type": "hardlink",
+        "sha256": "de5ff78bbf8ae09877bff71aad0e3d39120587edcfe4c4c05a4638917df98ac1",
+        "sha256_in_prefix": "de5ff78bbf8ae09877bff71aad0e3d39120587edcfe4c4c05a4638917df98ac1",
+        "size_in_bytes": 623351
+      },
+      {
+        "_path": "lib/libiompstubs5.so",
+        "path_type": "hardlink",
+        "sha256": "6d8421f72d944f1b5901592aa025ea5a83897590d025798748ccf89922375e4f",
+        "sha256_in_prefix": "6d8421f72d944f1b5901592aa025ea5a83897590d025798748ccf89922375e4f",
+        "size_in_bytes": 204479
+      },
+      {
+        "_path": "lib/libomptarget.rtl.level0.so",
+        "path_type": "hardlink",
+        "sha256": "6e99b1a6250bcda59cb2e199b87ad86fc1c58cc2cb006df3547f9626d89f7217",
+        "sha256_in_prefix": "6e99b1a6250bcda59cb2e199b87ad86fc1c58cc2cb006df3547f9626d89f7217",
+        "size_in_bytes": 1239616
+      },
+      {
+        "_path": "lib/libomptarget.rtl.opencl.so",
+        "path_type": "hardlink",
+        "sha256": "ce2da554ed13117bae6e8f1123b456cb93f983652651b4824602c3907a76b93d",
+        "sha256_in_prefix": "ce2da554ed13117bae6e8f1123b456cb93f983652651b4824602c3907a76b93d",
+        "size_in_bytes": 1223520
+      },
+      {
+        "_path": "lib/libomptarget.rtl.x86_64.so",
+        "path_type": "hardlink",
+        "sha256": "c1b91906acf35a5eb81cdd038b54f670f7108e45ae6f8f6366105f22c9ccf44c",
+        "sha256_in_prefix": "c1b91906acf35a5eb81cdd038b54f670f7108e45ae6f8f6366105f22c9ccf44c",
+        "size_in_bytes": 387472
+      },
+      {
+        "_path": "lib/libomptarget.so",
+        "path_type": "hardlink",
+        "sha256": "670412243a9a1dbc0cabf64d6d81bb5f33c4a96fe2e0f2ba4271e182cfd781f4",
+        "sha256_in_prefix": "670412243a9a1dbc0cabf64d6d81bb5f33c4a96fe2e0f2ba4271e182cfd781f4",
+        "size_in_bytes": 550376
+      },
+      {
+        "_path": "licensing/compiler/openmp/third-party-programs.txt",
+        "path_type": "hardlink",
+        "sha256": "753301db61ffc9b486e9d3e8c6758ffc5db6679ea0cee32c4935b9e1a2d56bc5",
+        "sha256_in_prefix": "753301db61ffc9b486e9d3e8c6758ffc5db6679ea0cee32c4935b9e1a2d56bc5",
+        "size_in_bytes": 31156
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "3db6da799031795ddb1420b64faa154afefc6dca01e4639594edc8ed9cbb95e8",
+  "size": 1440579,
+  "subdir": "linux-64",
+  "timestamp": 1626182296095,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/intel-openmp-2021.3.0-h06a4308_3350.conda",
+  "version": "2021.3.0"
+}
