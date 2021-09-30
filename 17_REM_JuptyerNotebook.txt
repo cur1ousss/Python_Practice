@@ -1,0 +1,61 @@
+https://www.youtube.com/watch?v=HW29067qVWk&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=17
+
+# Installation
+	. through bundled with Anaconda
+	. using pip3 install jupyter notebook
+
+
+. terminal runs the Notebook Server
+. kernel defaults to Base python Version global on machine
+
+
+# MARKDOWN in jupyter lab >>
+
+	// symbols exact as below
+
+	# Heading_1_Biggest 
+	## Heading_2 
+     so on till ####### Heading_6
+
+	*italics*
+
+	**Bold**
+
+	- unordered List 1
+	- unordered List 2
+
+	1. Ordered List
+	2. Ordered List
+
+	> blockquote
+
+	---
+		horizontal line
+
+	Inline code 'code' in between text para.
+
+	'''
+		big code block 
+	''' 
+
+	normal Text something like this.
+
+	Create equations $ x^2 $ using Latex $
+
+	www.jupyter.org
+
+	Custom Links [this](www.SomeWebsite.org)
+
+
+
+// Execution order is shown in Brackets left side those are not line Numbers
+
+# Jupyter Shortcuts
+
+y - cell format code
+m - cell format markdown 
+shift+enter - run cell
+Enter - normal line insert in cell
+Esc - to return to command mode
+		// command mode , Edit mode 
+	
