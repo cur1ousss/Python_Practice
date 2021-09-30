@@ -9,19 +9,22 @@ conda is both a package and environment manager and is language agnostic.
 
 
 
-mkdir 16_MyProject
-cd 16_MyProject
+. mkdir 16_MyProject
+. cd 16_MyProject
 
-conda create --name 16_MyProject_Env flask python=2.7
-source activate 16_MyProject_Env
+. conda create --name 16_MyProject_Env flask python=2.7
+. source activate 16_MyProject_Env
 	or
-conda create --prefix /Path/home/user/folder/16_MyProject_Env python=2.7 flask numpy
-source activate 16_MyProject_Env
+. conda create --prefix /Path/home/user/folder/16_MyProject_Env python=2.7 flask numpy
+. source activate 16_MyProject_Env
 
-conda env export > environment.yaml
-conda env create -f environment.yaml
-	// create env using yaml file similar to requirements.txt
+# Exporting environment.yaml dependencies
+	. conda env export > environment.yaml
+	. conda env create -f environment.yaml
+		// create env using yaml file similar to requirements.txt
 
+cat environment.yaml
+	// display contents of file on terminal
 
 # Managing Environment Variables
 				// can use global variables but Environment variables better since global might still conflict
@@ -31,28 +34,30 @@ conda env create -f environment.yaml
 
 	Environment Variables allow us to access sensitive data without putting it into Project Code
 
-// list conda environments on machine
-	- conda env list
+// list conda environments on machine and its location in file disk
+	. conda env list
 
 // cd to env directory
  // create 2 differnt directory trees so we can set environment variables
 	// activate directory >> holds Scirpts that will run whenever the environment is activated
-		- mkdir -p etc/conda/activate.d
-		- touch etc/conda/activate.d/env_vars.sh
+		. cd to env_Name_Directory
+		. mkdir -p etc/conda/activate.d
+		. touch etc/conda/activate.d/env_vars.sh
 
-		- mkdir -p etc/conda/deactivate.d 
-		- touch etc/conda/deactivate.d/env_vars.sh
+		. cd to env_Name_Directory
+		. mkdir -p etc/conda/deactivate.d 
+		. touch etc/conda/deactivate.d/env_vars.sh
 
-		Now create Environment variables in activate script and unset them in deactivate script
+		Now we can create Environment variables in activate script and unset them in deactivate script
 
-	#!/bin/sh >> indicates file is a bash script
+			#!/bin/sh >> indicates file is a bash script
 
 	# File activate.d/env_vars.sh	{contents exact and symbols}
 
 		#!/bin/sh 
 		export DATABASE_URI="postgresql://user:pass@db_server:5431/testName_db"
 
-	*// Environment variable >> for a connection to a Database with username and password so it is separate from Project's Code and not uploaded to public git etc..
+	*// Environment variable >> for a connection to a Database with username and password so it is separate from Project's Code and not uploaded to public github etc..
 
 	# File deactivate.d/env_vars.sh {contents exact and symbols}
 
@@ -65,11 +70,35 @@ conda env create -f environment.yaml
 	- echo $DATABASE_URI
 
 	- source deactivate
-
+	- echo $DATABASE_URI
 
 // learned to separate Environments, python versions, dependencies{modules},Environment variables
-	// activating that project env will lead to DB activate to its correct project so databases not mixed for other projects
+	// activating that Env_project env will lead to DB activate to its correct project so databases not mixed for other projects unlike global env variable which need to set each time for diff database
 
+	// https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#setting-environment-variables
+		// in Windows activate and deactivate environment vars differnt folder scripts
 
 // 14:20 >> https://www.youtube.com/watch?v=cY2NXB_Tqq0&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=37
-	>> script to auto activate correct Environment
+	// vid 16/143
+	>> script to auto activate {if exists} correct Environment when cd to Project_code File or to Create Env from environment.yaml file in the Project
+		// existing auto env exec's >> auto env , der env etc..
+
+		https://github.com/chdoig/conda-auto-env/blob/master/conda_auto_env.sh
+		https://github.com/CoreyMSchafer/code_snippets/blob/master/conda_auto_env.sh
+
+		# Modified from:
+		# https://github.com/chdoig/conda-auto-env
+
+		# Auto activate conda environments
+		function conda_auto_env() {
+		if [ -e "environment.yaml" ]; then
+		ENV_NAME=$(head -n 1 environment.yaml | cut -f2 -d ' ')
+		# Check if you are already in the environment
+		if [[ $CONDA_PREFIX != *$ENV_NAME* ]]; then
+		# Try to activate environment
+		source activate $ENV_NAME &>/dev/null
+		fi
+		fi
+		}
+
+		export PROMPT_COMMAND="conda_auto_env;$PROMPT_COMMAND"
