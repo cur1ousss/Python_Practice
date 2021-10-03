@@ -79,7 +79,7 @@ print(n) 	# gives Name error since n does'nt exist outside of function
 x='global x'
 
 def modd():
-	global x='lund' # Error Need to Separate lines
+	'''	global x='lund' # Error Need to Separate lines '''
 	print(x)
 
 modd()
