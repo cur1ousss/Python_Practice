@@ -29,6 +29,7 @@ print(a[-1:-5])	# printing only works from left to right
 print(a[-5:-1]) # normal op
 
 print(a[-1:-1]) # op - [] empty
+			# ** cannot Rollover exceede on either end
 
 a = ['Mary', 'had', 'a', 'little', 'lamb']
 #	0 	1	2	3	4
