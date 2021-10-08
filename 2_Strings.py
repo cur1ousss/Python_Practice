@@ -55,3 +55,30 @@ print(dir(message))
 # help() shows all info regarding datatype | datatype.method | cannot pass variable
 print(help(str))
 print(help(str.lower))
+
+##************************************************************************************************
+# printing in same line elements of list
+	# by default print() prints next element in new line {\n}
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+
+for i in a:
+	print(i,end=' * ')
+
+print() # since last lines keep pointer in same line need to shift to next like java nextInt() input after String input eats line 1
+# java int x=sc.nextInt();
+# 	sc.nextLine(); or 
+# String stringaa=sc.nextLine();
+	
+for i in a:
+	print(i,end=' xd ')
+
+for i in a:
+	print(i,end='\n')
+
+for i in a:
+	print(i,end=' ')
+
+		 # sep= ' xd ' , sep - separator does'nt work
+
+
+print(*i) # to print elements of list in single line without , 
