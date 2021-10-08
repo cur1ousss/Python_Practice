@@ -64,7 +64,7 @@ print(*a[::-1])
 
 
 # Slicing Strings
-
+	# can treat String like list starting index 0
 sample_url='http://coreyms.com'
 
 print(sample_url)
