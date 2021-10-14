@@ -20,11 +20,10 @@ print('F strings in functions os.mkdir() and os.makedirs()')
 
 print(f'Current working Directory is {os.getcwd()}')
 
-
-
-
 # os.listdir('Path') - if path not passed by default lists contents of current working directory otherwise lists contents of path passed
 print(os.listdir()) # output as list
+
+#*****************************************************************************  
 
 # # Making New Folder
 
@@ -56,6 +55,8 @@ print(os.listdir())
 # Rename File or Folder
 os.rename('OldName.txt','NewName.txt')
 
+#*****************************************************************************  
+
 # Information about file
 x=os.stat('Python.txt')
 print(x)
@@ -71,6 +72,8 @@ from datetime import datetime
 
 modif_time=os.stat('FilePath/FileName.txt').st_mtime
 print(datetime.fromtimestamp(modif_time))
+
+#*****************************************************************************
 
 # To see entire File directory tree and files within desktop Traverseing files
 os.walk()
@@ -89,6 +92,8 @@ for dirpath,dirnames,filenames in os.walk('Begining/Path/Folder'):
 	print('---------------------------')
 
 	# can use to custom Implement Search File or Folder Option
+
+#*****************************************************************************
 
 # Access Home Directory location by grabbing Home Evironment Variable
 
