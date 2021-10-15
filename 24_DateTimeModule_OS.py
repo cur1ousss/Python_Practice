@@ -108,6 +108,13 @@ print(dt_utc_now)
 dt_utc_now=datetime.datetime.now(tz=pytz.UTC)
 print(dt_utc_now)
 
+import datetime
+import pytz
+
+indiaTime=datetime.datetime.now(tz=pytz.timezone('Asia/Calcutta'))
+print(indiaTime)
+	# conversion necessary since if code run on usa server .now() gives that timezone time hence conversion and Timezones pass for uniformaty
+
 # Converting Timezones using givenTime.timezone(pytz.timezone(''))
 print(pytz.all_timezones)	# list of all timezones in pytz
 
