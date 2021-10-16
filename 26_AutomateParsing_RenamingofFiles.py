@@ -11,7 +11,7 @@ os.chdir('Path/to/FoldercontainingFiles/Videos')
 
 for f in os.listdir():
 	f_name,f_ext=os.path.splitext(f)
-
+			# splittext() returns tuple of FileName and Extension	
 	f_title,f_course,f_num=f_name.split('-') 
 		# removing -
 			# can also f_title,f_course,f_num=f_name.split(' - ') 
