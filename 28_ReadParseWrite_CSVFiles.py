@@ -12,7 +12,7 @@ with open('names.csv','r') as csv_file:
 		# csv.reader() uses dialect in background that expects values to be of certain format
 
 	print(csvReader) # just an object in memory Need to iterate for human readable
-
+			# *** this object is an iterable and behaves like a generator hence need to loop over it 
 	next(csvReader)
 		# shifting/skipping to next line to ignore First line Filed Parameter name - from concept of generators
 
@@ -105,4 +105,4 @@ with open('names.csv','r') as csv_file:
 		for line in csvReader:
 			del line['email']
 				# deleting email key
-			csvWriter.writerow(line)
+			csvWriter.writerow(line)	
