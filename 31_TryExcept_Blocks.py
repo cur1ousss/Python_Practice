@@ -9,7 +9,7 @@ finally:
 	pass		
 		# pass Keyword is filler since can't leave Empty use pass keyword
 
-
+#***************************************************************************** 
 # useful to handle exceptions >> does not throw stack trace in terminal instead shows End user readable basic Error
 
 try:
@@ -20,7 +20,7 @@ except Exception:
 			# is general exception will catch all exceptions
 				# but better to use Specific Excpetion NameType to know what kind of error
 
-
+#***************************************************************************** 
 # Using Multiple Exceptions
 	# Exceptions fall through from Top to Bottom checked
 
@@ -43,9 +43,11 @@ except Exception as e:
 	print(e)	
 	
 
+#***************************************************************************** 
 # else clause
 	# used to run code in case try block does'nt raise an/throw exception
 	# else clause only runs if we don't throw an exception
+	# write code in Else clause the code that not written in try code to avoid accidental more errors in try block
 try:
 	f=open('Exp.cpp')
 except FileNotFoundError as e:
@@ -56,6 +58,7 @@ else:
 	print(f.read())
 	f.close()
 
+#***************************************************************************** 
 # finally clause
 	# runs no matter if exception raised or not
 	# used to generally release resources example file close, database close etc
@@ -73,6 +76,7 @@ finally:
 	f.close()
 
 
+#***************************************************************************** 
 # Raising Custom Exceptions
 try:
 	f=open('Corruptt.cpp')
