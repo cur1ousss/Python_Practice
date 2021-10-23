@@ -25,6 +25,25 @@ test=test.replace("world","universe")
 print(test)
 # string=string.replace("whattoReplace","replaceByString")
 
+# Also String Form Study More Later
+
+initial=('first\n'
+'second\n'
+'third\n')
+
+print(initial)
+
+
+inout=('first''second''third')
+print(inout)
+
+
+thirra=('first'
+'second'
+'third'
+)
+
+print(thirra)
 
 #************************************************************************************************
 
