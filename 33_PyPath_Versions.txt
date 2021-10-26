@@ -1,0 +1,16 @@
+https://www.youtube.com/watch?v=OdIHeg4jj2c&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=33
+
+# WINDOWS 10
+
+# precendence of PATH higher up is more than those below
+	# therefore can use 2 versions of python one above other latest at top so that can fallback to older legacy incase package of above won't work 
+
+# to show which version of python running / which executable currently using
+import sys
+print(sys.version)
+print(sys.executable)
+
+- pip show pygame
+	# shows location of package installed or not 
+
+- echo %path%
