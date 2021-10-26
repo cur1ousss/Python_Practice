@@ -1,0 +1,32 @@
+https://www.youtube.com/watch?v=PUIE7CPANfo&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&index=34
+
+# LINUX
+
+# find location of executable
+- which python3
+
+# type shows both aliases and location of executable {better alternative of which command}
+- type python3
+
+# show path LINUX
+- echo $PATH 
+
+# PATH precendence in linux top to bottom , first appearing has more precedence to get executed
+
+# adding Directory to $PATH in linux
+>> edit .bashrc or .bash_profile
+	append to python otherwise gets overwritten if not recursed $PATH:
+
+>> alias python=python3
+	in .bashrc or .bash_profile
+
+   alias pip=pip3
+
+# upgrade pip
+- pip install --upgrade pip
+
+# show info about package
+- pip show django
+	# generally acceptable location - site packages
+
+# pip show django location should match with sys.executable	
