@@ -4,6 +4,69 @@ message="""multiple lines which contain [enter] using
 
 # Prepared to sleep through the storm 
 
+# Strings are immutable in Python
+
+a='corey'
+print(a)
+print(f'Address of a is {id(a)}')
+
+a='john'
+print(a)
+print(f'Address of a is {id(a)}')
+
+	# Address of both A is Different
+
+	# here comparision means nothing since 'a' now is john , corey no longer exists by 'a' name ,exists only by its memory address hex
+if a==a:
+	print('true a==a')
+else:
+	print('false')
+
+print('Comparing id of a')
+if id(a)==id(a):
+	print(id(a))
+	print(id(a))
+	print('id same')
+else:
+	print('id different')
+
+a='corey'
+print(a)
+print(f'Address of a is {id(a)}')
+
+a[0]='C'
+print(a)	# Error TypeError TypeError: 'str' object does not support item assignment, string immutable can't change/modify string
+
+
+# lists are mutable objects can modify lists
+listX=[1,2,3,4,5]
+listX[1]=31
+
+print(listX)
+
+	# again addresses of both a are different after appending a+x original a does'nt exist
+a='corey'
+print(f'original add of a {id(a)}')
+
+a=a+'x'
+print(f'a+x add {id(a)}')
+
+print(a)
+
+# Immutable and Mutable affect Memory and Performance
+	# since while modifying immutable string everytime new object memory created
+employees=['corey','john','rick','steve','carl','adam']
+output='<ul>\n'
+
+for employee in employees:
+	output+='\t<li>{}</li>\n'.format(employee)
+	print(f'Mem Address of output {id(output)}') # everytime new Object created in memory
+
+output+='</ul>'
+print(output)
+	# to improve performance either use list.append() or .....
+
+#***************************************************************************** 
 
 # Using special characters like ' " conflicting with string " definition"
 message="escape character single quotes using backslash(\) \" some slashed"
