@@ -226,6 +226,7 @@ display()	# output will have wrapper code added to original function display()
 
 	# *args,**kwargs allow function to accept any arbitary number of positional or keyword arguments for our functions
 
+	# use *args **kwargs in wrapper function since has use of original_func() inside if did'nt maybe did't need to pass -> that use case would have been different then no wrapper decorator in that case
 def decorator_func(original_func):
 	def wrapper_func(*args,**kwargs):
 		print(f'Wrapper executed this before {original_func.__name__}')
