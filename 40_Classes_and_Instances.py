@@ -39,7 +39,7 @@ print(emp2.email)
 class Employee:
 	def __init__(self,first,last,pay):
 		self.first=first
-			# similar to emp1.name='corey'
+			# similar to emp1.name='corey' external assignment value to object/instance
 			# can also be self.fname=first
 				# but prefer to keep same self.first=first
 		self.last=last
