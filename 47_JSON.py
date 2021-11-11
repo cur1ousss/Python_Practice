@@ -85,7 +85,7 @@ with open('47_sample.json','r') as f:
 
 for state in data['states']:
 	print(state)
-	print(state['name'],state['abbreviation'])
+	print(state['name'],state['abbreviation'])	# print multiple objects using , or f string for better formatting
 	del state['area_codes']
 
 # dump method converts data into json file
@@ -119,6 +119,8 @@ print(len(data['list']['resources']))
 
 for item in data['list']['resources']:
 	print(item)
+		# *** item now latches onto exterior list key->resources key
+			# can now access keys within it using item['keyName']
 	name=item['resource']['fields']['name']
 			# name key within fields key with parent resource key
 	price=item['resource']['fields']['price']
