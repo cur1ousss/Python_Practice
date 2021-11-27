@@ -139,7 +139,7 @@ def get_emps_by_name(lastname):
 
 def update_pay(emp):
     with conn:
-        c.execute("""update employess set pay=:pay where first=:first and last=:last""",'first':emp.first,'last':emp.last,'pay':emp.pay)
+        c.execute("""update employess set pay=:pay where first=:first and last=:last""",{'first':emp.first,'last':emp.last,'pay':emp.pay})
 
 def remove_emp(emp):
     with conn:
