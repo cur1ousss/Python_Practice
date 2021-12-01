@@ -1,0 +1,31 @@
+# hiding password and secret keys in Environment Variables (linux and MAC)
+
+# use cases databases and api keys
+    # don't put directly in code
+
+################################################################
+# modify .bashrc
+> nano .bash_profile or .bashrc
+
+        {in .bashrc file}
+export DB_USER="usernameX"
+export DB_PASS="passwordX"
+
+> source ~/.bashrc
+
+
+######## now in py code file ####### 
+
+import os
+
+db_user=os.environ.get('DB_USER') 
+            # since it is a dictionary use .get() method
+db_pwd=os.environ.get('DB_PASS')
+
+print(f'{db_user} and {db_pwd}')
+
+#############################################################################
+
+# in Windows
+
+edit Environment Variables in GUI and same py code above add entries gui wise manually
